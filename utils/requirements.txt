@@ -1,0 +1,14 @@
+bokeh
+numpy
+PyQt6
+pyside6
+matplotlib
+scikit-learn
+scipy
+seaborn
+statsmodels
+openpyxl
+requests
+tqdm
+pydantic
+pyinstaller

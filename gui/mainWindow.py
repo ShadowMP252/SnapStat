@@ -89,7 +89,6 @@ class TheMainWindow(QMainWindow):
         widgets.stackedWidget.setCurrentWidget(widgets.home)
         widgets.btn_home.setStyleSheet(UIFunctions.selectMenu(widgets.btn_home.styleSheet()))
 
-
     # BUTTONS CLICK
     # Post functions for clicked buttons
         rightButtons.themeSettingsBtn.clicked.connect(self.toggleTheme)        

@@ -4,6 +4,7 @@ from PySide6.QtGui import *
 from PySide6.QtCore import *
 from PySide6.QtWidgets import *
 from gui.widgets.custom_grip import *
+from utils import logger
 
 # GLOBALS
 GLOBAL_STATE = False
@@ -249,7 +250,7 @@ class UIFunctions:
         self.ui.maximizeRestoreAppBtn.clicked.connect(lambda: UIFunctions.maximize_restore(self))
 
         # CLOSE APPLICATION
-        self.ui.closeAppBtn.clicked.connect(lambda: self.close())
+        self.ui.closeAppBtn.clicked.connect(lambda: (logger.debug("Session Terminated"), self.close()))
 
     def resize_grips(self):
         if Settings.ENABLE_CUSTOM_TITLE_BAR:
